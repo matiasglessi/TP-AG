@@ -12,7 +12,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="jnetic-1.0.0-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="javacsv.jar"/>
+	<classpathentry exported="true" kind="lib" path="javacsv.jar"/>
+	<classpathentry kind="lib" path="swt.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
