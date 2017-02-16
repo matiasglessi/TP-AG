@@ -3,7 +3,7 @@ package dominio;
 
 import java.util.HashMap;
 
-import org.apache.commons.validator.routines.UrlValidator;
+//import org.apache.commons.validator.routines.UrlValidator;
 
 import com.eviware.soapui.impl.WsdlInterfaceFactory;
 import com.eviware.soapui.impl.wsdl.WsdlInterface;
@@ -68,7 +68,7 @@ public class Wsdl {
 	public String getInterfaz() {
 		return interfaz;
 	}
-	
+	/*
 	public boolean isValidWsdlUrl (String url){
 		UrlValidator urlValidator = new UrlValidator();
 		if(urlValidator.isValid(url)) 
@@ -79,7 +79,7 @@ public class Wsdl {
 	    //logger.info("WSDL URL is not valid...");
 	    return false;
 	}
-	
+	*/
 	public boolean isWSDLAvailable(String wsdlAddr){
 		try {
 			WsdlProject project = new WsdlProject();
