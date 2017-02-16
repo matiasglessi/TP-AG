@@ -1,0 +1,19 @@
+150.25,78,10.7,78,73,89,84,3.75,3,StateDemo,http://dotnet.jku.at/buch/samples/7/lifecycle/StateDemo.asmx?WSDL,iniciaSesion
+69,83,23.4,84,78,89,89,2,6,SecureLogin,http://www.vapoultrygrowers.com/VPGC-Web/Global/SecureLogin.asmx?WSDL,iniciaSesion
+397,88,1.4,89,60,100,74,169.67,35,SIMPS,http://ws.strikeiron.com/StrikeironMarketplaceServices?WSDL,registraUsuario
+66,83,33.4,84,78,89,89,2,5,SecureLogin,http://www.moyerschicks.com/MC-Web/Global/SecureLogin.asmx?WSDL,registraUsuario
+2555,83,0.3,84,73,78,88,2035,64,validateAddress_Service,http://addressmeister.bizware.com/service/wsdl/server.soap.wsdl,validaDireccion
+84,91,12.5,97,67,78,82,2,8,BasicAddressMatch,http://www.bgtaddresstools.beta.state.pa.us/BasicAddressMatch/BasicAddressMatch.asmx?wsdl,validaDireccion
+105.56,92,14.6,97,73,78,80,0.67,95,DOTSAddressValidate,http://ws2.serviceobjects.net/av/AddressValidate.asmx?WSDL,validaDireccion
+264,94,0.4,98,73,100,80,13,11,EMSFlightMonitorService,http://www.pathfinder-xml.com/development/WSDL/EMSFlightMonitorMessage.wsdl,reservaVuelo
+177,88,18.5,96,73,78,80,11,94,K4TAirReservationsWS,http://ws.keyfortravel.com/Air/airreservations.asmx?wsdl,reservaVuelo
+379.5,88,14.8,96,73,100,80,137.5,7,FlightRouteService,http://www.pathfinder-xml.com/development/WSDL/FlightRouteService.wsdl,reservaVuelo
+100,94,21.8,98,73,100,87,2,64,FlightInformation,http://ws.cendant.com/B2BGateway/service/FlightInformation?WSDL,reservaVuelo
+322,95,21.8,98,73,100,80,132,12,FlightScheduleAggregatorService,http://www.pathfinder-xml.com/development/WSDL/FlightScheduleAggregatorService.wsdl,reservaVuelo
+260.69,78,4.7,78,67,78,84,27.46,5,HotelFunctionsService, http://www.travelnow.com/services/HotelServices200520?WSDL,reservaHotel
+219,87,2.8,96,73,78,80,17,87,K4THotelAvailWS, http://ws.keyfortravel.com/Hotel/hotelavail.asmx?wsdl,reservaHotel
+139.08,65,11.7,65,60,78,62,61.5,41,HotelsService, http://ws1.touricoholidays.com/HotelsService.asmx?wsdl,reservaHotel
+289.75,39,2.7,39,78,78,91,28.5,8,CUCTransaction,http://mo.paybill.com/WebServices/CUCTransaction.wsdl,autorizaPago
+282.43,85,12.4,95,73,78,84,10.43,96,CreditCardValidator, http://www.tpisoft.com/smartpayments/validate.asmx?WSDL,autorizaPago
+413,83,17.8,84,78,89,89,10,6,sbp, http://th.sbuypayment.com/webservices/Pay.php?wsdl,autorizaPago
+124.38,87,15.8,95,73,78,84,0.88,91,SmartPayments, http://www.tpisoft.com/smartpayments/transact.asmx?WSDL,autorizaPago
