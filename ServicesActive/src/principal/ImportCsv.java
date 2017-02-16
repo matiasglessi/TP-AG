@@ -2,6 +2,7 @@ package principal;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -19,6 +20,9 @@ public class ImportCsv {
 			Set<Wsdl>  service = new HashSet<Wsdl>();
 			Chromosome cromosoma = new Chromosome();
 			HashMap<String, Integer> ponderaciones = new HashMap<>();
+			HashMap<String, ArrayList<Wsdl>> serviceInterface = new HashMap<>();
+//			ArrayList<Wsdl> listWsdl = new ArrayList<>();
+
 
 			
 			CsvReader wsdl_import = new CsvReader ("sources/services.csv");
@@ -48,6 +52,9 @@ public class ImportCsv {
 	            	
 	        		cromosoma.addGen(w);
 
+	        		
+	        		serviceInterface.put(interfaz, carga(interfaz, w
+	        				));
 	            }
 	            
 	            ponderaciones.put(Wsdl.AVAILABILITY, 3);
@@ -56,20 +63,15 @@ public class ImportCsv {
 	            
 	             System.out.println(FitnessFunction.FunctionGoalWeighted8(cromosoma, ponderaciones));
 	           
+	             ArrayList<Wsdl> prueba = serviceInterface.get("iniciaSesion");
+	             System.out.println(prueba.size());
+	             for (int i = 0; i < prueba.size(); i++) {
+	            	 System.out.println(prueba.get(i).getService_name());
+	            	 System.out.println(prueba.get(i).getInterfaz());
+
+					
+				}
 	             wsdl_import.close();
-//	            int cont = 0;
-//	             
-//	            for(Wsdl ws : service){
-//	            	//if(ws.isWSDLAvailable(ws.getWsdl_address())){
-//	            		cont++;
-//	            		 System.out.println(ws.getWsdl_address() + " - " + cont);	
-//	            	//}
-//	             
-//	               // System.out.println(ws.getResponse_time() + " - " + ws.getAvailability() + " - "
-//	                //    + ws.getThroughput() + " - " + ws.getSuccessability());
-//	            }
-//	            System.out.println(cont);
-			
 			
 		} catch (FileNotFoundException e){
 			e.printStackTrace();
@@ -80,6 +82,15 @@ public class ImportCsv {
 		
 
 		
-}
+	}
+	
+	public static ArrayList<Wsdl> carga (String interfaz, Wsdl service){
+		ArrayList<Wsdl> listWsdl = new ArrayList<>();
+		
+		if (interfaz.equals(service.getInterfaz()))
+			listWsdl.add(service);
+		return listWsdl;
+		
+	}
 
 }
