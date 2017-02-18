@@ -26,7 +26,7 @@ public class ImportCsv {
 
 			
 			CsvReader wsdl_import = new CsvReader ("sources/services.csv");
-			wsdl_import.readHeaders();
+			//wsdl_import.readHeaders();
 			 
 	            while (wsdl_import.readRecord()) {
 	            	if (wsdl_import.get(0).startsWith("##")){
@@ -52,11 +52,26 @@ public class ImportCsv {
 	            	
 	        		cromosoma.addGen(w);
 
-	        		
-	        		serviceInterface.put(interfaz, carga(interfaz, w
-	        				));
+        			//System.out.println("Para interfaz: " + interfaz + " y servicio: " + service_name);
+        			
+	        		if (serviceInterface.containsKey(interfaz)){
+	        			//System.out.println("Existia la interfaz: " + interfaz);
+	   	             	ArrayList<Wsdl> interfazWdsls = serviceInterface.get(interfaz);
+	   	             	interfazWdsls.add(w);
+	   	             	//serviceInterface.put(interfaz, interfazWdsls);
+	        		}
+	        		else{
+	        			ArrayList<Wsdl> interfazWdsls = new ArrayList<>();
+	        			//System.out.println("NO existia la interfaz: " + interfaz + " por eso la creo.");
+	   	             	interfazWdsls.add(w);
+	   	             	serviceInterface.put(interfaz, interfazWdsls);
+
+	        		}
 	            }
 	            
+	            //serviceInterface.put(interfaz, carga(interfaz, w));
+	
+        			
 	            ponderaciones.put(Wsdl.AVAILABILITY, 3);
 	            ponderaciones.put(Wsdl.LATENCY, 5);
 	            ponderaciones.put(Wsdl.COMPLIANCE, 4);
@@ -90,7 +105,6 @@ public class ImportCsv {
 		if (interfaz.equals(service.getInterfaz()))
 			listWsdl.add(service);
 		return listWsdl;
-		
 	}
 
 }
