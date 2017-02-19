@@ -2,18 +2,21 @@ package dominio;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.csvreader.CsvReader;
 
+
 public class ReadData {
-	Set<Wsdl>  service = new HashSet<Wsdl>();
+	ArrayList<Wsdl>  service = new ArrayList<>();
+	HashMap<String, ArrayList<Wsdl>> serviceInterface = new HashMap<>();
+	Chromosome crom = new Chromosome();
+
 	
 	public void ReadDataCsv (){
 		try{
 			CsvReader wsdl_import = new CsvReader ("sources/services.csv");
-			wsdl_import.readHeaders();
 			 
 	            while (wsdl_import.readRecord()) {
 	            	if (wsdl_import.get(0).startsWith("##")){
@@ -31,11 +34,12 @@ public class ReadData {
 	            	String service_name = wsdl_import.get(9);
 	            	String wsdl_address = wsdl_import.get(10);
 	            	String interfaz = wsdl_import.get(11);
-	                
-	            	service.add(new Wsdl(response_time, availability, throughput, successability, reliability,
-	            			compliance, best_practice, latency, documentation, service_name, wsdl_address, interfaz ));
+	            	Wsdl w = new Wsdl(response_time, availability, throughput, successability, reliability,
+	            			compliance, best_practice, latency, documentation, service_name, wsdl_address, interfaz );
+	            	service.add(w);
 	            	
-
+	            	crom.addGen(w);
+	            	listWsdl(interfaz, w);
 	            }
 	            	            	           
 	             wsdl_import.close();
@@ -47,5 +51,33 @@ public class ReadData {
 			e.printStackTrace();
 		}
 	}
+	
+	public void listWsdl(String interfaz, Wsdl w ){
+		if (serviceInterface.containsKey(interfaz)){
+			//System.out.println("Existia la interfaz: " + interfaz);
+            	ArrayList<Wsdl> interfazWdsls = serviceInterface.get(interfaz);
+            	interfazWdsls.add(w);
+		}
+		else{
+			ArrayList<Wsdl> interfazWdsls = new ArrayList<>();
+			//System.out.println("NO existia la interfaz: " + interfaz + " por eso la creo.");
+            	interfazWdsls.add(w);
+            	serviceInterface.put(interfaz, interfazWdsls);
+
+		}
+	}
+	
+	public HashMap<String, ArrayList<Wsdl>> getWsdlInterface (){
+		return this.serviceInterface;
+	}
+	
+	public Chromosome getCromosoma(){
+		return this.crom;
+	}
+	
+	public ArrayList<Wsdl> getAllWsdlInterface(){
+		return this.service;
+	}
+	
 	
 }
