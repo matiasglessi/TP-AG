@@ -3,7 +3,7 @@ package principal;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-
+import dominio.Chromosome;
 import dominio.FitnessFunction;
 import dominio.ReadData;
 import dominio.Wsdl;
@@ -22,12 +22,12 @@ public class ImportCsv {
             
              System.out.println(FitnessFunction.FunctionGoalWeighted8(datos.getCromosoma(), ponderaciones));
            
-             ArrayList<Wsdl> prueba = datos.getWsdlInterface().get("reservaVuelo"); 
-             System.out.println(prueba.size());
-             for (int i = 0; i < prueba.size(); i++) {
-            	 System.out.println(prueba.get(i).getService_name());
-            	 System.out.println(prueba.get(i).getInterfaz());
-             }
+//             ArrayList<Wsdl> prueba = datos.getWsdlInterface().get("reservaVuelo"); 
+//             System.out.println(prueba.size());
+//             for (int i = 0; i < prueba.size(); i++) {
+//            	 System.out.println(prueba.get(i).getService_name());
+//            	 System.out.println(prueba.get(i).getInterfaz());
+//             }
              
 //             System.out.println("Lista de Wsdl totales: ");
 //             ArrayList<Wsdl> allWsdl = datos.getAllWsdlInterface(); 
@@ -36,6 +36,15 @@ public class ImportCsv {
 //            	 System.out.println(allWsdl.get(i).getService_name());
 //            	 System.out.println(allWsdl.get(i).getInterfaz());
 //             }
+//             
+//             System.out.println(datos.generateCromosoma().length());
+             
+             System.out.println("Cromosoma generado: ");
+             Chromosome c = datos.generateCromosoma();
+             for (int i = 0; i < c.length(); i++) {
+            	 System.out.println(c.getGen(i).getService_name());
+				
+			}
 
 	}
 	

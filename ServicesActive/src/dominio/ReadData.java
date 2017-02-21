@@ -4,6 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Random;
 
 import com.csvreader.CsvReader;
 
@@ -79,5 +82,22 @@ public class ReadData {
 		return this.service;
 	}
 	
+	public Chromosome generateCromosoma (){
+		Chromosome ch = new Chromosome();
+		ArrayList<Wsdl> wsdls;
+		Iterator it = serviceInterface.entrySet().iterator();
+		while(it.hasNext()){
+			Map.Entry<String, ArrayList<Wsdl>> m = (Map.Entry<String, ArrayList<Wsdl>>)it.next();
+			wsdls =m.getValue();
+			System.out.println("Tamaño array " +wsdls.size() + " " +m.getKey());
+			int valor = (int) (Math.random()*wsdls.size());
+			Wsdl w = wsdls.get(valor);
+			ch.addGen(w);
+		}
+		return ch;
+		
+		
+		
+	}
 	
 }
