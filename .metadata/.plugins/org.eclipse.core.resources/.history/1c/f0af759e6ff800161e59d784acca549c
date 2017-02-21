@@ -29,13 +29,13 @@ public class ImportCsv {
             	 System.out.println(prueba.get(i).getInterfaz());
              }
              
-//             System.out.println("Lista de Wsdl totales: ");
-//             ArrayList<Wsdl> allWsdl = datos.getAllWsdlInterface(); 
-//             System.out.println(allWsdl.size());
-//             for (int i = 0; i < allWsdl.size(); i++) {
-//            	 System.out.println(allWsdl.get(i).getService_name());
-//            	 System.out.println(allWsdl.get(i).getInterfaz());
-//             }
+             System.out.println("Lista de Wsdl totales: ");
+             ArrayList<Wsdl> allWsdl = datos.getAllWsdlInterface(); 
+             System.out.println(allWsdl.size());
+             for (int i = 0; i < allWsdl.size(); i++) {
+            	 System.out.println(allWsdl.get(i).getService_name());
+            	 System.out.println(allWsdl.get(i).getInterfaz());
+             }
 
 	}
 	
