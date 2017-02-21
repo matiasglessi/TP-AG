@@ -2,6 +2,8 @@ package principal;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 import dominio.Chromosome;
 import dominio.FitnessFunction;
@@ -39,6 +41,7 @@ public class ImportCsv {
 //             
 //             System.out.println(datos.generateCromosoma().length());
              
+     			
              System.out.println("Cromosoma generado: ");
              Chromosome c = datos.generateCromosoma();
              for (int i = 0; i < c.length(); i++) {
