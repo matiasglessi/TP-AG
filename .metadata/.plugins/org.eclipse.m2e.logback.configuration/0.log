@@ -358,3 +358,336 @@
 2017-02-21 19:09:40,095 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
 2017-02-21 19:09:40,096 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-02-21 19:09:40,096 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:54:18,588 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ServicesActive:ServicesActive:0.0.1-SNAPSHOT @ /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/pom.xml.
+2017-02-22 08:54:20,385 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:54:20,391 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:54:20,393 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:54:20,393 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:54:21,756 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:54:21,756 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:54:21,758 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:54:21,758 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:56:05,703 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:56:05,703 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:56:05,705 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:56:05,705 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:56:06,754 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:56:06,754 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:56:06,756 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:56:06,756 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:56:56,452 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:56:56,453 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:56:56,454 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:56:56,454 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:57:08,149 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:57:08,149 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:57:08,150 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:57:08,150 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:57:19,751 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:57:19,751 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:57:19,752 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:57:19,753 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:57:48,021 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:57:48,022 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:57:48,024 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:57:48,025 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:58:07,436 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:58:07,436 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:58:07,438 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:58:07,439 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:59:36,542 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:59:36,543 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:59:36,544 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:59:36,544 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:59:43,344 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:59:43,344 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:59:43,346 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:59:43,346 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 08:59:52,196 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:59:52,197 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 08:59:52,197 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 08:59:52,198 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:00:34,692 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:00:34,692 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:00:34,693 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:00:34,693 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:00:37,329 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:00:37,329 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:00:37,330 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:00:37,330 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:01:14,791 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:01:14,791 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:01:14,792 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:01:14,792 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:01:15,801 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:01:15,802 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:01:15,805 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:01:15,805 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:02:09,932 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:02:09,932 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:02:09,934 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:02:09,935 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:02:23,550 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:02:23,550 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:02:23,551 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:02:23,552 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:02:42,662 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:02:42,662 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:02:42,663 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:02:42,663 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:02:55,308 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:02:55,308 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:02:55,309 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:02:55,310 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:03:50,748 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:03:50,749 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:03:50,755 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:03:50,756 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:04:03,544 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:04:03,545 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:04:03,546 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:04:03,546 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:04:14,631 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:04:14,632 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:04:14,634 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:04:14,635 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:04:52,531 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:04:52,531 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:04:52,533 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:04:52,534 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:05:30,011 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:05:30,012 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:05:30,012 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:05:30,013 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:07:15,315 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:07:15,315 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:07:15,316 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:07:15,316 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:07:23,177 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:07:23,178 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:07:23,178 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:07:23,178 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:07:54,683 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:07:54,683 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:07:54,684 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:07:54,684 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:08:46,219 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:08:46,220 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:08:46,230 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:08:46,233 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:10:08,327 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:10:08,327 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:10:08,329 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:10:08,329 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:10:48,691 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:10:48,691 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:10:48,692 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:10:48,692 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:11:01,343 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:11:01,344 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:11:01,355 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:11:01,356 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:11:11,412 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:11:11,413 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:11:11,414 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:11:11,414 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:11:27,646 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:11:27,647 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:11:27,648 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:11:27,649 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:11:40,157 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:11:40,157 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:11:40,158 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:11:40,158 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:12:37,272 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:12:37,273 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:12:37,274 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:12:37,274 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:18:40,587 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:18:40,588 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:18:40,589 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:18:40,589 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:18:51,125 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:18:51,126 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:18:51,127 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:18:51,128 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:18:59,933 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:18:59,934 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:18:59,934 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:18:59,934 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:19:16,566 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:19:16,566 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:19:16,567 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:19:16,567 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:19:36,223 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:19:36,224 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:19:36,225 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:19:36,225 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:20:46,304 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:20:46,304 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:20:46,305 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:20:46,305 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:21:05,359 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:21:05,360 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:21:05,361 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:21:05,361 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:21:17,264 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:21:17,264 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:21:17,265 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:21:17,265 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:21:50,997 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:21:50,998 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:21:51,000 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:21:51,000 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:22:28,099 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:22:28,099 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:22:28,100 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:22:28,100 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:23:11,416 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:23:11,416 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:23:11,417 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:23:11,417 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:23:32,160 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:23:32,161 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:23:32,162 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:23:32,163 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:25:15,098 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:25:15,098 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:25:15,099 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:25:15,099 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:40:29,551 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:40:29,551 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:40:29,552 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:40:29,553 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:40:41,901 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:40:41,901 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:40:41,902 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:40:41,902 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:40:48,245 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:40:48,245 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:40:48,245 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:40:48,246 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:41:52,815 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:41:52,816 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:41:52,817 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:41:52,817 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:41:54,824 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:41:54,824 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:41:54,825 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:41:54,825 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:42:22,330 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:42:22,330 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:42:22,330 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:42:22,331 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:42:39,708 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:42:39,708 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:42:39,709 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:42:39,709 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:44:01,258 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:44:01,259 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:44:01,260 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:44:01,261 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:44:04,160 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:44:04,161 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:44:04,161 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:44:04,161 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 09:44:07,258 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:44:07,259 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 09:44:07,259 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 09:44:07,259 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:07:54,547 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:07:54,558 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:07:54,559 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:07:54,560 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:08:04,240 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:08:04,240 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:08:04,241 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:08:04,241 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:11:48,451 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:11:48,451 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:11:48,452 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:11:48,453 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:11:55,972 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:11:55,972 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:11:55,973 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:11:55,973 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:12:13,716 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:12:13,717 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:12:13,718 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:12:13,718 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:12:56,648 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:12:56,649 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:12:56,649 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:12:56,649 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:13:07,559 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:07,559 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:13:07,560 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:07,560 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:13:15,460 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:15,460 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:13:15,461 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:15,461 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:13:24,866 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:24,867 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:13:24,867 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:24,867 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:13:53,435 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:53,435 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:13:53,436 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:53,436 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:13:59,278 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:59,279 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:13:59,279 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:13:59,279 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:14:05,705 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:05,706 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:14:05,707 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:05,707 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:14:11,431 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:11,431 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:14:11,432 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:11,432 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:14:19,889 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:19,890 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:14:19,891 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:19,891 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:14:25,764 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:25,764 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:14:25,764 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:25,765 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:14:31,309 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:31,309 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:14:31,311 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:14:31,311 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:15:14,103 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:15:14,104 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:15:14,105 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:15:14,105 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:15:56,535 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:15:56,536 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:15:56,536 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:15:56,537 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:16:16,257 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:16:16,257 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:16:16,258 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:16:16,258 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:24:29,392 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:24:29,392 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:24:29,393 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:24:29,393 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:24:42,808 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:24:42,809 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:24:42,810 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:24:42,810 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:24:58,004 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:24:58,004 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:24:58,005 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:24:58,005 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:25:16,172 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:25:16,173 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:25:16,173 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:25:16,174 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources
+2017-02-22 10:25:23,528 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:25:23,528 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/main/resources
+2017-02-22 10:25:23,529 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-22 10:25:23,529 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/valeria/Diseño/TP-AlgoritmosGeneticos/ServicesActive/src/test/resources

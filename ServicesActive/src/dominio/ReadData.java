@@ -3,7 +3,6 @@ package dominio;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -14,7 +13,9 @@ import com.csvreader.CsvReader;
 public class ReadData {
 	ArrayList<Wsdl>  service = new ArrayList<>();
 	Chromosome crom = new Chromosome();
+//	ArrayList<String> posInterface = new ArrayList<>();
 	LinkedHashMap<String, ArrayList<Wsdl>> serviceInterface = new LinkedHashMap<>(0, (float)0.75, false);
+//	HashMap<String, ArrayList<Wsdl>> mapWsdlInterface = new HashMap<>();
 	
 	public void ReadDataCsv (){
 		try{
@@ -39,8 +40,7 @@ public class ReadData {
 	            	Wsdl w = new Wsdl(response_time, availability, throughput, successability, reliability,
 	            			compliance, best_practice, latency, documentation, service_name, wsdl_address, interfaz );
 	            	service.add(w);
-	            	
-	            	crom.addGen(w);
+//	            	cargaInterfaz(interfaz);
 	            	listWsdl(interfaz, w);
 	            }
 	            	            	           
@@ -54,9 +54,22 @@ public class ReadData {
 		}
 	}
 	
+	
+//	public void cargaInterfaz(String interfaz){
+//		if (!posInterface.contains(interfaz)){
+//			posInterface.add(interfaz);
+//		}
+//	}
+	
+//	public int getPosInterfaz(String interfaz){
+//		return posInterface.indexOf(interfaz);	
+//	}
+	
+//	public ArrayList<String> getPosInterfaz(){
+//		return this.posInterface;
+//	}
+	
 	public void listWsdl(String interfaz, Wsdl w ){
-		System.out.println("Interfaz: " + interfaz);
-
 		if (serviceInterface.containsKey(interfaz)){
 			//System.out.println("Existia la interfaz: " + interfaz);
             	ArrayList<Wsdl> interfazWdsls = serviceInterface.get(interfaz);
@@ -69,6 +82,20 @@ public class ReadData {
             	serviceInterface.put(interfaz, interfazWdsls);
 		}
 	}
+	
+//	public void listWsdl2(String interfaz, Wsdl w ){
+//		if (mapWsdlInterface.containsKey(interfaz)){
+//			//System.out.println("Existia la interfaz: " + interfaz);
+//            	ArrayList<Wsdl> interfazWdsls = mapWsdlInterface.get(interfaz);
+//            	interfazWdsls.add(w);
+//		}
+//		else{
+//			ArrayList<Wsdl> interfazWdsls = new ArrayList<>();
+//			//System.out.println("NO existia la interfaz: " + interfaz + " por eso la creo.");
+//            	interfazWdsls.add(w);
+//            	mapWsdlInterface.put(interfaz, interfazWdsls);
+//		}
+//	}
 	
 	public LinkedHashMap<String, ArrayList<Wsdl>> getWsdlInterface (){
 		return this.serviceInterface;
@@ -88,18 +115,26 @@ public class ReadData {
 		Iterator it = serviceInterface.entrySet().iterator();
 		while(it.hasNext()){
 			Map.Entry<String, ArrayList<Wsdl>> m = (Map.Entry<String, ArrayList<Wsdl>>)it.next();
-//			System.out.println("value - " + m.getValue());
 			wsdls =m.getValue();
-			System.out.println("Tamaño array " +wsdls.size() + " " +m.getKey());
 			int valor = (int) (Math.random()*wsdls.size());
 			Wsdl w = wsdls.get(valor);
-//			System.out.println("name: " + w.getService_name());
 			ch.addGen(w);
 		}
-		return ch;
-		
-		
-		
+		return ch;		
 	}
+	
+//	public Chromosome generateCromosoma (){
+//		Chromosome ch = new Chromosome();
+//		ArrayList<Wsdl> wsdls;
+//		Iterator it = mapWsdlInterface.entrySet().iterator();
+//		while(it.hasNext()){
+//			Map.Entry<String, ArrayList<Wsdl>> m = (Map.Entry<String, ArrayList<Wsdl>>)it.next();
+//			wsdls =m.getValue();
+//			int valor = (int) (Math.random()*wsdls.size());
+//			Wsdl w = wsdls.get(valor);
+//			ch.addGenMap(m.getKey(), w);
+//		}
+//		return ch;		
+//	}
 	
 }

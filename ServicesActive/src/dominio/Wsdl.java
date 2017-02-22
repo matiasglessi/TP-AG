@@ -5,9 +5,6 @@ import java.util.HashMap;
 
 //import org.apache.commons.validator.routines.UrlValidator;
 
-import com.eviware.soapui.impl.WsdlInterfaceFactory;
-import com.eviware.soapui.impl.wsdl.WsdlInterface;
-import com.eviware.soapui.impl.wsdl.WsdlProject;
 
 public class Wsdl {
 	public static final String RESPONSE_TIME = "response_time";
@@ -80,17 +77,17 @@ public class Wsdl {
 	    return false;
 	}
 	*/
-	public boolean isWSDLAvailable(String wsdlAddr){
-		try {
-			WsdlProject project = new WsdlProject();
-			WsdlInterface iface = WsdlInterfaceFactory.importWsdl( project, wsdlAddr, true)[0];
-			return true;
-			
-		} catch (Exception e) {
-			return false;
-		}	
-      
-    }
+//	public boolean isWSDLAvailable(String wsdlAddr){
+//		try {
+//			WsdlProject project = new WsdlProject();
+//			WsdlInterface iface = WsdlInterfaceFactory.importWsdl( project, wsdlAddr, true)[0];
+//			return true;
+//			
+//		} catch (Exception e) {
+//			return false;
+//		}	
+//      
+//    }
 	
 	
 	

@@ -1,17 +1,32 @@
 package dominio;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Chromosome {
 	private ArrayList<Wsdl> chromosomeList;
+	private HashMap<String, Wsdl> chromosome;
 	
 	public Chromosome (){
 		chromosomeList = new ArrayList<Wsdl>();
+		chromosome = new HashMap<>();
 		
 	}
 	
 	public void addGen(Wsdl w){
 		chromosomeList.add(w);
+	}
+	
+	public void addGenPosition (Wsdl w, Integer i){
+		chromosomeList.add(i, w);
+	}
+	
+	public void addGenMap(String interfaz, Wsdl w){
+		chromosome.put(interfaz, w);
+	}
+	
+	public Wsdl getGenMap(String interfaz){
+		return chromosome.get(interfaz);
 	}
 	
 	public boolean equals(Object o){
