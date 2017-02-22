@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import com.csvreader.CsvReader;
@@ -12,9 +13,8 @@ import com.csvreader.CsvReader;
 
 public class ReadData {
 	ArrayList<Wsdl>  service = new ArrayList<>();
-	HashMap<String, ArrayList<Wsdl>> serviceInterface = new HashMap<>();
 	Chromosome crom = new Chromosome();
-
+	LinkedHashMap<String, ArrayList<Wsdl>> serviceInterface = new LinkedHashMap<>(0, (float)0.75, false);
 	
 	public void ReadDataCsv (){
 		try{
@@ -55,6 +55,8 @@ public class ReadData {
 	}
 	
 	public void listWsdl(String interfaz, Wsdl w ){
+		System.out.println("Interfaz: " + interfaz);
+
 		if (serviceInterface.containsKey(interfaz)){
 			//System.out.println("Existia la interfaz: " + interfaz);
             	ArrayList<Wsdl> interfazWdsls = serviceInterface.get(interfaz);
@@ -68,7 +70,7 @@ public class ReadData {
 		}
 	}
 	
-	public HashMap<String, ArrayList<Wsdl>> getWsdlInterface (){
+	public LinkedHashMap<String, ArrayList<Wsdl>> getWsdlInterface (){
 		return this.serviceInterface;
 	}
 	

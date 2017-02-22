@@ -16,7 +16,9 @@ public class ImportCsv {
 			HashMap<String, Integer> ponderaciones = new HashMap<>();
 			ReadData datos = new ReadData();
 			
-			datos.ReadDataCsv();			
+			datos.ReadDataCsv();	
+			
+			System.out.println(datos.getWsdlInterface());
 			
             ponderaciones.put(Wsdl.AVAILABILITY, 3);
             ponderaciones.put(Wsdl.LATENCY, 5);
