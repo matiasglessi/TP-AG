@@ -1,0 +1,32 @@
+package dominio;
+
+import java.util.List;
+import java.util.Map;
+
+import com.eviware.soapui.impl.wsdl.support.MapTestPropertyHolder;
+import com.mgiamberardino.jnetic.Individual.Factory;
+
+public class ChromosomeFactory implements Factory<Chromosome, Wsdl> {
+
+	private Map<String, Integer> ponderaciones;
+	
+	@Override
+	public Chromosome build(List<Wsdl> arg0) {
+		// TODO Auto-generated method stub
+		
+		return null;
+	}
+
+	@Override
+	public Wsdl buildGen(Integer arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Chromosome buildRandom() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

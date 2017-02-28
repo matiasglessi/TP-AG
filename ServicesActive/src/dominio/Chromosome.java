@@ -2,31 +2,43 @@ package dominio;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class Chromosome {
-	private ArrayList<Wsdl> chromosomeList;
-	private HashMap<String, Wsdl> chromosome;
+import com.mgiamberardino.jnetic.Individual;
+
+public class Chromosome implements Individual<Wsdl>{
+	private List<Wsdl> genes;
+	private Map<String, Integer> ponderaciones;
+	
+	public Chromosome (Map<String, Integer> ponderaciones){
+		this(ponderaciones, new ArrayList<Wsdl>());
+ 	}
 	
 	public Chromosome (){
-		chromosomeList = new ArrayList<Wsdl>();
-		chromosome = new HashMap<>();
-		
+		this(new HashMap<>());
 	}
 	
+	public Chromosome(Map<String, Integer> ponderaciones, List<Wsdl> genes){
+		this.genes=genes;
+		this.ponderaciones=ponderaciones;
+	
+	}
+	
+	public Map<String, Integer> getPonderaciones() {
+		return ponderaciones;
+	}
+
+	public void setPonderaciones(Map<String, Integer> ponderaciones) {
+		this.ponderaciones = ponderaciones;
+	}
+
 	public void addGen(Wsdl w){
-		chromosomeList.add(w);
+		genes.add(w);
 	}
 	
 	public void addGenPosition (Wsdl w, Integer i){
-		chromosomeList.add(i, w);
-	}
-	
-	public void addGenMap(String interfaz, Wsdl w){
-		chromosome.put(interfaz, w);
-	}
-	
-	public Wsdl getGenMap(String interfaz){
-		return chromosome.get(interfaz);
+		genes.add(i, w);
 	}
 	
 	public boolean equals(Object o){
@@ -34,15 +46,45 @@ public class Chromosome {
 	}
 	
 	public int length(){
-		return chromosomeList.size();
+		return genes.size();
 	}
 	
 	public Wsdl getGen(int i){
-		return chromosomeList.get(i);
-	}
-	
-	public ArrayList<Wsdl> getServices(){
-		return this.chromosomeList;
+		return genes.get(i);
 	}
 
+	
+	private  double sumaPorAtributo(String atributo){
+		return gens().stream().mapToDouble(values->values.getAtributte(atributo)).sum();		
+	}
+	
+
+	private  Integer sumaPonderacion(Map<String, Integer> ponderacion) {
+		return ponderacion.values().stream().reduce(0, Integer::sum);
+	}
+	
+	@Override
+	public List<Wsdl> gens() {
+		return new ArrayList<>(genes);
+	}
+
+	@Override
+	public Double getAptitude() {
+		double suma = ponderaciones.entrySet().stream().mapToDouble(
+				entry -> entry.getValue()*sumaPorAtributo(entry.getKey())).sum();
+		Integer ponderacion = sumaPonderacion(ponderaciones);
+		return null == ponderacion ? 0 : suma/ponderacion;
+	}
+
+	@Override
+	public boolean isValid() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Chromosome [getAptitude()=" + getAptitude() + "]";
+	}
+	
 }

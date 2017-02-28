@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.population.Evolution"/>
+<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.population.Population"/>
+<fullyQualifiedTypeName name="dominio.FitnessFunction"/>
+<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.util.Conditions"/>
+<fullyQualifiedTypeName name="principal.ImportCsv"/>
+<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.Individual"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.eviware.soapui.impl.wsdl.support.MapTestPropertyHolder"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.internal.Library"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="org.apache.xmlbeans.impl.xb.xsdschema.ListDocument.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.eviware.soapui.security.tools.InfiniteInputStream"/>
+<fullyQualifiedTypeName name="java.util.stream.IntStream"/>
+<fullyQualifiedTypeName name="dominio.ChromosomeFactory"/>
+<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.operators.Operators"/>
+<fullyQualifiedTypeName name="dominio.Chromosome"/>
+<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.util.Selectors"/>
 </qualifiedTypeNameHistroy>

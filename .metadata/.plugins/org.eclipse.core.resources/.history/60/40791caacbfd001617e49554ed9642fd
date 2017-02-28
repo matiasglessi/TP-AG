@@ -1,0 +1,36 @@
+package principal;
+
+import java.util.HashMap;
+
+import com.mgiamberardino.jnetic.operators.Operators;
+import com.mgiamberardino.jnetic.population.Evolution;
+import com.mgiamberardino.jnetic.util.Conditions;
+
+import dominio.Chromosome;
+import dominio.ChromosomeFactory;
+import dominio.ReadData;
+import dominio.Wsdl;
+public class ImportCsv {
+	
+	public static <T> void  main(String[] arg){
+			HashMap<String, Integer> ponderaciones = new HashMap<>();
+			ReadData datos = new ReadData();
+			
+			datos.ReadDataCsv();	
+			
+            ponderaciones.put(Wsdl.AVAILABILITY, 3);
+            ponderaciones.put(Wsdl.LATENCY, 5);
+            ponderaciones.put(Wsdl.COMPLIANCE, 4);
+
+            System.out.println("Cromosoma generado: ");
+            ChromosomeFactory chromosomeFactory = new ChromosomeFactory(ponderaciones, ReadData.getWsdlInterface());
+			Chromosome c = Evolution.create(chromosomeFactory, 5, 0.1)
+                 	.mutator(Operators.factory(chromosomeFactory).basicMutatorBuilder(0.5).build())
+            		.evolveUntil(Conditions.converge(0.001))
+                	.best();
+            for (int i = 0; i < c.length(); i++) {
+            	System.out.println(c.getGen(i).getService_name());
+			}
+	}
+	
+}

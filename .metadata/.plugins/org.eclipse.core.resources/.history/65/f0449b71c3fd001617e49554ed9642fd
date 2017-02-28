@@ -1,0 +1,94 @@
+package dominio;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.mgiamberardino.jnetic.Individual;
+
+public class Chromosome implements Individual<Wsdl>{
+	private List<Wsdl> chromosomeList;
+	private Map<String, Integer> ponderaciones;
+	private Map<String, Wsdl> chromosome;
+	
+	public Chromosome (Map<String, Integer> ponderaciones){
+		chromosomeList = new ArrayList<Wsdl>();
+		this.ponderaciones = ponderaciones;
+		chromosome = new HashMap<>();
+	}
+	
+	public Chromosome (){
+		this(new HashMap<>());
+	}
+	
+	public Chromosome(Map<String, Integer> ponderaciones, List<Wsdl> genes){
+		
+	}
+	
+	public Map<String, Integer> getPonderaciones() {
+		return ponderaciones;
+	}
+
+	public void setPonderaciones(Map<String, Integer> ponderaciones) {
+		this.ponderaciones = ponderaciones;
+	}
+
+	public void addGen(Wsdl w){
+		chromosomeList.add(w);
+	}
+	
+	public void addGenPosition (Wsdl w, Integer i){
+		chromosomeList.add(i, w);
+	}
+	
+	public void addGenMap(String interfaz, Wsdl w){
+		chromosome.put(interfaz, w);
+	}
+	
+	public Wsdl getGenMap(String interfaz){
+		return chromosome.get(interfaz);
+	}
+	
+	public boolean equals(Object o){
+		return this.equals(o);
+	}
+	
+	public int length(){
+		return chromosomeList.size();
+	}
+	
+	public Wsdl getGen(int i){
+		return chromosomeList.get(i);
+	}
+
+	
+	private  double sumaPorAtributo(String atributo){
+		return gens().stream().mapToDouble(values->values.getAtributte(atributo)).sum();		
+	}
+	
+
+	private  Integer sumaPonderacion(Map<String, Integer> ponderacion) {
+		return ponderacion.values().stream().reduce(0, Integer::sum);
+	}
+	
+	@Override
+	public List<Wsdl> gens() {
+		return new ArrayList<>(chromosomeList);
+	}
+
+	@Override
+	public Double getAptitude() {
+		double suma = ponderaciones.entrySet().stream().mapToDouble(
+				entry -> entry.getValue()*sumaPorAtributo(entry.getKey())).sum();
+		Integer ponderacion = sumaPonderacion(ponderaciones);
+		return null == ponderacion ? 0 : suma/ponderacion;
+	}
+
+	@Override
+	public boolean isValid() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+}
