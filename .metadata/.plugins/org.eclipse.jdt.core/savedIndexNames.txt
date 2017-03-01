@@ -1,24 +1,11 @@
-INDEX VERSION 1.127+/home/valeria/Documentos/diseño/TP-AlgoritmosGeneticos/.metadata/.plugins/org.eclipse.jdt.core
-2066489604.index
-3214207201.index
-46282419.index
-1831424017.index
-1932949083.index
-3888198363.index
-2233963263.index
-1473420353.index
-120211678.index
-1913109094.index
-1761479498.index
-2533686622.index
-527624335.index
-2841451250.index
-2982035129.index
-3721837726.index
-3885805113.index
-2630498905.index
-1972104005.index
+INDEX VERSION 1.127+/home/valeria/Documentos/Diseño/TP-AlgoritmosGeneticos/.metadata/.plugins/org.eclipse.jdt.core
 3781442486.index
-3936375867.index
-2771403403.index
+1972104005.index
 1600044149.index
+192629631.index
+1509910356.index
+1761479498.index
+3936375867.index
+1831424017.index
+2533686622.index
+1473420353.index
