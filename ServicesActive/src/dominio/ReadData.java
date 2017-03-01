@@ -16,9 +16,9 @@ public class ReadData {
 	Chromosome crom = new Chromosome();
 	private static Map<String, List<Wsdl>> serviceInterface = new LinkedHashMap<>(0, (float)0.75, false);
 	
-	public void ReadDataCsv (){
+	public void ReadDataCsv (String pathFile){
 		try{
-			CsvReader wsdl_import = new CsvReader ("sources/services.csv");
+			CsvReader wsdl_import = new CsvReader (pathFile);
 			 
 	            while (wsdl_import.readRecord()) {
 	            	if (wsdl_import.get(0).startsWith("##")){
