@@ -6,6 +6,7 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
+import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
@@ -37,6 +38,8 @@ public class Principal {
 	public static final int SHELL_TRIM = SWT.CLOSE | SWT.TITLE | SWT.MIN | SWT.MAX | SWT.RESIZE;
 
 	Shell shell;
+	static Display display;
+	Button btnGenerate;
 	Label lblInfoGen;
 	Label lblFitness;
 	Spinner spinnerResponseTime;
@@ -66,8 +69,11 @@ public class Principal {
 //		shell.setBackground(new Color(display, 192,192,192));
 	
 		shell.setText("gA - Diseño");
-        shell.setSize(824, 460);
-        shell.setLocation(300, 300);
+        shell.setSize(824, 460);Rectangle splashRect = shell.getBounds();
+        Rectangle displayRect = display.getBounds();
+        int x = (displayRect.width - splashRect.width) / 2;
+        int y = (displayRect.height - splashRect.height) / 2;
+        shell.setLocation(x, y);
         new Label(shell, SWT.NONE);
         new Label(shell, SWT.NONE);
         new Label(shell, SWT.NONE);
@@ -93,7 +99,7 @@ public class Principal {
 		
 		MenuItem mntmArchivo = new MenuItem(menuBar, SWT.CASCADE);
 		mntmArchivo.setText("Archivo");
-		
+	   
 		Menu menu = new Menu(mntmArchivo);
 		mntmArchivo.setMenu(menu);
 		
@@ -111,21 +117,26 @@ public class Principal {
 		MenuItem mntmSalir = new MenuItem(menu, SWT.NONE);
 		mntmSalir.setText("Salir");
 		mntmSalir.addSelectionListener(new salirSelectionListener());
+		
+		MenuItem mntmNewSubmenu = new MenuItem(menuBar, SWT.CASCADE);
+		mntmNewSubmenu.setText("Ayuda");
+		
+		Menu menu_1 = new Menu(mntmNewSubmenu);
+		mntmNewSubmenu.setMenu(menu_1);
+		
+		MenuItem mntmAcerca = new MenuItem(menu_1, SWT.PUSH);
+		mntmAcerca.setText("Acerca de ...");
+		
+		mntmAcerca.addSelectionListener(new SelectionListener() {
+	        public void widgetSelected(SelectionEvent e) {
+	          AcercaDe acercaDeWindow = new AcercaDe(shell, display);
+	        }
 
-		MenuItem mntmAcerca = new MenuItem(menuBar, SWT.CASCADE);
-		mntmAcerca.setText("Acerca ");
-		
-		Menu menu2= new Menu(mntmAcerca);
-		mntmAcerca.setMenu(menu2);
-		
-		MenuItem mntmAutores = new MenuItem(menu2, SWT.NONE);
-		mntmAutores.setText("Autores");
-        mntmAutores.addListener(SWT.Selection, event -> doShowMessageBox());
-//		mntmAutores.addSelectionListener(new acercaDeAutoresSelectionListener());
-		
-		MenuItem mntmApp = new MenuItem(menu2, SWT.NONE);
-		mntmApp.setText("Aplicación");
-		
+	        public void widgetDefaultSelected(SelectionEvent e) {
+
+	        }
+	      });
+
 		Composite compositePonderacion = new Composite(shell, SWT.BORDER);
 		gridLayout = new GridLayout();
 		gridLayout.numColumns = 2;
@@ -242,7 +253,8 @@ public class Principal {
 		});
 		btnRestartValues.setText("Restart Values");
 		
-		Button btnGenerate = new Button(shell, SWT.PUSH);
+		btnGenerate = new Button(shell, SWT.PUSH);
+		btnGenerate.setEnabled(false);
 		GridData gd_btnGenerate = new GridData(SWT.FILL, SWT.FILL, false, false, 1, 1);
 		gd_btnGenerate.widthHint = 86;
 		gd_btnGenerate.horizontalSpan = 2; 
@@ -345,6 +357,7 @@ public class Principal {
 				if (pathFile != null) {
 					readData = new ReadData();
 					readData.ReadDataCsv(pathFile);
+					btnGenerate.setEnabled(true);
 				}
 			}		    
 
@@ -371,28 +384,8 @@ public class Principal {
 
 		    public void widgetDefaultSelected(SelectionEvent event) {}
 	  }
-	  
-	  class acercaDeAutoresSelectionListener implements SelectionListener {
-		    public void widgetSelected(SelectionEvent event) {
-		    	
-				
-			}		    
-
-		    public void widgetDefaultSelected(SelectionEvent event) {}
-	  }
-
-	  private void doShowMessageBox() {
-	        
-	        int style = SWT.ICON_INFORMATION | SWT.OK | SWT.RESIZE;
-
-	        MessageBox dia = new MessageBox(shell, style);
-	        dia.setText("Diseño de Sistemas de Software I");
-	        dia.setMessage("Glessi Matías" + "\n" + "del Rio Valeria"); 
-	        dia.open();
-	    }    
 
 
-	
 	
 	/**
 	 * Launch the application.
@@ -402,7 +395,7 @@ public class Principal {
 	public static void main(String[] args) {
 		//LoadLibrary libraryLoader = new LoadLibrary();
 		//libraryLoader.loadSWT();
-		Display display = new Display();
+		display = new Display();
         new Principal(display);
         display.dispose();
 	}
