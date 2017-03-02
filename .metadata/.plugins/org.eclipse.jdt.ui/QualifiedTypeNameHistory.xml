@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.population.Evolution"/>
 <fullyQualifiedTypeName name="com.mgiamberardino.jnetic.population.Population"/>
 <fullyQualifiedTypeName name="dominio.FitnessFunction"/>
 <fullyQualifiedTypeName name="com.mgiamberardino.jnetic.util.Conditions"/>
@@ -20,10 +19,18 @@
 <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
 <fullyQualifiedTypeName name="dominio.ChromosomeFactory"/>
 <fullyQualifiedTypeName name="com.mgiamberardino.jnetic.operators.Operators"/>
-<fullyQualifiedTypeName name="dominio.Chromosome"/>
 <fullyQualifiedTypeName name="com.mgiamberardino.jnetic.util.Selectors"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Display"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Menu"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Label"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.MenuItem"/>
+<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.population.Evolution"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Color"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Font"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.SelectionListener"/>
+<fullyQualifiedTypeName name="principal.Principal.guardarWorkflowSelectionListener"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
+<fullyQualifiedTypeName name="dominio.Chromosome"/>
 </qualifiedTypeNameHistroy>

@@ -1,31 +1,18 @@
 package principal;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.text.SimpleDateFormat;
 import java.util.HashMap;
-import java.util.StringTokenizer;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
-import org.eclipse.swt.events.ShellAdapter;
-import org.eclipse.swt.events.ShellEvent;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Shell;
@@ -63,6 +50,11 @@ public class Principal {
 	private String pathFile;
 	private ReadData readData;
 	private HashMap<String, Integer> ponderaciones;
+	private static final Integer MAX_PONDERACION =10;
+	private static final Integer MIN_PONDERACION =-10;
+	Chromosome c;
+	
+
 
 	
 	public Principal(Display display){
@@ -70,9 +62,10 @@ public class Principal {
 		createContents();
 		shell.open();
 		shell.layout();
-
+//		shell.setBackground(new Color(display, 192,192,192));
+	
 		shell.setText("gA - Diseño");
-        shell.setSize(724, 368);
+        shell.setSize(824, 460);
         shell.setLocation(300, 300);
         new Label(shell, SWT.NONE);
         new Label(shell, SWT.NONE);
@@ -107,6 +100,11 @@ public class Principal {
 		mntmCargar.setText("Cargar Workflow");
 		mntmCargar.addSelectionListener(new cargarWorkflowSelectionListener());
 		
+		MenuItem mntmGuardar = new MenuItem(menu, SWT.CASCADE);
+		mntmGuardar.setText("Guardar");
+		mntmGuardar.addSelectionListener(new guardarWorkflowSelectionListener());
+		
+		
 		new MenuItem(menu, SWT.SEPARATOR);
 		
 		MenuItem mntmSalir = new MenuItem(menu, SWT.NONE);
@@ -122,7 +120,7 @@ public class Principal {
 				true, 1, 1);
 		gd_compositePonderacion.horizontalSpan = 3;
 		gd_compositePonderacion.widthHint = 200;
-		gd_compositePonderacion.heightHint = 236;
+		gd_compositePonderacion.heightHint = 300; //236 antes
 		
 		compositePonderacion.setLayoutData(gd_compositePonderacion);		
 		
@@ -130,49 +128,58 @@ public class Principal {
 		lblResponseTime.setText("Response Time");
 		
 		spinnerResponseTime = new Spinner(compositePonderacion, SWT.BORDER);
-		spinnerResponseTime.setMaximum(10);
+		spinnerResponseTime.setMaximum(MAX_PONDERACION);
+		spinnerResponseTime.setMinimum(MIN_PONDERACION);
 		
 		Label lblAvailabilty = new Label(compositePonderacion, SWT.NONE);
 		lblAvailabilty.setText("Availabilty");
 		
 		spinnerAvailability = new Spinner(compositePonderacion, SWT.BORDER);
-		spinnerAvailability.setMaximum(10);		
+		spinnerAvailability.setMaximum(MAX_PONDERACION);
+		spinnerAvailability.setMinimum(MIN_PONDERACION);
+
 				
 		Label lblThroughoput = new Label(compositePonderacion, SWT.NONE);
 		lblThroughoput.setText("Throughoput");
 		
 		spinnerThroughoput = new Spinner(compositePonderacion, SWT.BORDER);
-		spinnerThroughoput.setMaximum(10);
+		spinnerThroughoput.setMaximum(MAX_PONDERACION);
+		spinnerThroughoput.setMinimum(MIN_PONDERACION);
 		
 		Label lblSuccess = new Label(compositePonderacion, SWT.NONE);
 		lblSuccess.setText("Successability");
 		
 		spinnerSuccess = new Spinner(compositePonderacion, SWT.BORDER);
-		spinnerSuccess.setMaximum(10);
+		spinnerSuccess.setMaximum(MAX_PONDERACION);
+		spinnerSuccess.setMinimum(MIN_PONDERACION);
 		
 		Label lblReliability = new Label(compositePonderacion, SWT.NONE);
 		lblReliability.setText("Reliability");
 		
 		spinnerReliability = new Spinner(compositePonderacion, SWT.BORDER);
-		spinnerReliability.setMaximum(10);
+		spinnerReliability.setMaximum(MAX_PONDERACION);
+		spinnerReliability.setMinimum(MIN_PONDERACION);
 		
 		Label lblCompliance = new Label(compositePonderacion, SWT.NONE);
 		lblCompliance.setText("Compliance");
 		
 		spinnerCompliance = new Spinner(compositePonderacion, SWT.BORDER);
-		spinnerCompliance.setMaximum(10);
+		spinnerCompliance.setMaximum(MAX_PONDERACION);
+		spinnerCompliance.setMinimum(MIN_PONDERACION);
 		
 		Label lblBest = new Label(compositePonderacion, SWT.NONE);
 		lblBest.setText("Best Practice");
 		
 		spinnerBest = new Spinner(compositePonderacion, SWT.BORDER);
-		spinnerBest.setMaximum(10);
+		spinnerBest.setMaximum(MAX_PONDERACION);
+		spinnerBest.setMinimum(MIN_PONDERACION);
 		
 		Label lblLatency = new Label(compositePonderacion, SWT.NONE);
 		lblLatency.setText("Latency");
 		
 		spinnerLatency = new Spinner(compositePonderacion, SWT.BORDER);
-		spinnerLatency.setMaximum(10);
+		spinnerLatency.setMaximum(MAX_PONDERACION);
+		spinnerLatency.setMinimum(MIN_PONDERACION);
 		
 		tableResults = new Table(shell, SWT.BORDER | SWT.FULL_SELECTION);
 		GridData gd_tableResults = new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1);
@@ -199,7 +206,7 @@ public class Principal {
 		lblInfoGen = new Label(shell, SWT.NONE);
 		lblInfoGen.setText("Cantidad de generaciones: -");
 		GridData gd_labelFit = new GridData(SWT.LEFT, SWT.CENTER, false, false, 1, 1);
-		gd_labelFit.widthHint = 176;
+		gd_labelFit.widthHint = 200;
 		lblInfoGen.setLayoutData(gd_labelFit);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -237,17 +244,19 @@ public class Principal {
 		        });
 				btnGenerate.setText("Generate");
 		
-				
-				Label lblFitness = new Label(shell, SWT.NONE);
-				lblFitness.setText("Fitness number: -");
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
+		lblFitness = new Label(shell, SWT.NONE);
+		lblFitness.setText("Fitness number: -");
+		GridData gd_labelFitn = new GridData(SWT.LEFT, SWT.CENTER, false, false, 1, 1);
+		gd_labelFitn.widthHint = 200;
+		lblFitness.setLayoutData(gd_labelFitn);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
 	
 	}
 	
@@ -284,7 +293,7 @@ public class Principal {
 		tableResults.removeAll();
 		System.out.println("Cromosoma generado: ");
         ChromosomeFactory chromosomeFactory = new ChromosomeFactory(ponderaciones, ReadData.getWsdlInterface());
-		Chromosome c = Evolution.create(chromosomeFactory, 250, 0.01)
+		/*Chromosome*/ c = Evolution.create(chromosomeFactory, 250, 0.01)
              	.mutator(Operators.factory(chromosomeFactory).basicMutatorBuilder(0.05).build())
         		.selector(Selectors.binaryTournament(0.9, 0.5))
              	.evolveUntil(Conditions.converge(0.001, Chromosome.class).or(Conditions.after(150)))
@@ -298,6 +307,7 @@ public class Principal {
 							c.getGen(i).getWsdl_address() });
 		}
         lblInfoGen.setText("Cantidad de Generaciones: " + c.getAptitude());
+        lblFitness.setText("Fitness number: " + c.getAptitude());
 
 	}
 	
@@ -325,6 +335,29 @@ public class Principal {
 
 		    public void widgetDefaultSelected(SelectionEvent event) {}
 	  }
+	  
+
+	  
+	  class guardarWorkflowSelectionListener implements SelectionListener {
+		    public void widgetSelected(SelectionEvent event) {
+				FileDialog fdialog = new FileDialog(shell, SWT.SAVE);
+				fdialog.setText("Guardar como...");
+				fdialog.setFilterNames(new String[] { "Batch Files", "All Files (*.*)" });
+				fdialog.setFilterExtensions(new String[] { "*.bat", "*.*" });
+				fdialog.setFilterPath("sources/"); // Windows path
+				fdialog.setFileName("*.txt");
+				System.out.println("Save to: " + fdialog.open());	        
+				String name = fdialog.getFileName();
+				if (pathFile != null) {
+					readData = new ReadData();
+					readData.writeFichero(name, c);
+				}
+			}		    
+
+		    public void widgetDefaultSelected(SelectionEvent event) {}
+	  }
+
+
 
 	
 	

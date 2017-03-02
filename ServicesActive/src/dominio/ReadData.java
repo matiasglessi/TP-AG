@@ -1,12 +1,14 @@
 package dominio;
 
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.List;
+import java.util.Map;
 
 import com.csvreader.CsvReader;
 
@@ -95,5 +97,20 @@ public class ReadData {
 	}
 	
 
+	public  void writeFichero (String object, Chromosome c){
+		try {
+			BufferedWriter bf = new BufferedWriter(new FileWriter(object));
+			bf.write("Workflow óptimo: " + "\n");
+			for (int i = 0; i < c.length(); i++) {
+				bf.write("Interfaz: " + c.getGen(i).getInterfaz() + " - " + "Name Service: " + c.getGen(i).getService_name() + "\n");
+				
+			}
+			bf.write("Aptitud del Cromosoma: " + c.getAptitude() + "\n");
+			bf.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	
 }
