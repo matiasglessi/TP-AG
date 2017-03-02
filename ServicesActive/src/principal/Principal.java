@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Method;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.StringTokenizer;
@@ -11,6 +14,7 @@ import java.util.StringTokenizer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.events.ShellAdapter;
 import org.eclipse.swt.events.ShellEvent;
 import org.eclipse.swt.layout.GridData;
@@ -45,6 +49,8 @@ public class Principal {
 	public static final int SHELL_TRIM = SWT.CLOSE | SWT.TITLE | SWT.MIN | SWT.MAX | SWT.RESIZE;
 
 	Shell shell;
+	Label lblInfoGen;
+	Label lblFitness;
 	Spinner spinnerResponseTime;
 	Spinner spinnerAvailability;
 	Spinner spinnerThroughoput;
@@ -68,6 +74,9 @@ public class Principal {
 		shell.setText("gA - Diseño");
         shell.setSize(724, 368);
         shell.setLocation(300, 300);
+        new Label(shell, SWT.NONE);
+        new Label(shell, SWT.NONE);
+        new Label(shell, SWT.NONE);
         
 		while (!shell.isDisposed()) {
 			if (!display.readAndDispatch()) {
@@ -82,9 +91,9 @@ public class Principal {
 	 */
 	public void createContents() {
 		
-		GridLayout gridLayout = new GridLayout(11, false);
+		GridLayout gridLayout = new GridLayout(12, false);
 		shell.setLayout(gridLayout);
-		/*
+		
 		Menu menuBar = new Menu(shell, SWT.BAR);
 		shell.setMenuBar(menuBar);
 		
@@ -96,64 +105,14 @@ public class Principal {
 		
 		MenuItem mntmCargar = new MenuItem(menu, SWT.NONE);
 		mntmCargar.setText("Cargar Workflow");
+		mntmCargar.addSelectionListener(new cargarWorkflowSelectionListener());
 		
 		new MenuItem(menu, SWT.SEPARATOR);
 		
 		MenuItem mntmSalir = new MenuItem(menu, SWT.NONE);
 		mntmSalir.setText("Salir");
-		
-		MenuItem mntmAcercaDe = new MenuItem(menuBar, SWT.PUSH);
-		mntmAcercaDe.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent arg0) {
-				System.out.println("HOLA");
-			}
-			@Override
-			public void widgetDefaultSelected(SelectionEvent arg0) {
-				System.out.println("HOLA");
+		mntmSalir.addSelectionListener(new salirSelectionListener());
 
-			}
-		});
-		mntmAcercaDe.setText("Acerca de");
-		
-		mntmAcercaDe.addListener(SWT.PUSH, new Listener() {
-			
-			public void handleEvent(Event e) {
-	          System.out.println("Select All");
-	        }
-	      });
-		*/		
-		Button btnLoadWorkflow = new Button(shell, SWT.NONE);
-		btnLoadWorkflow.setText("Load Workflow");
-		btnLoadWorkflow.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-				FileDialog fdialog = new FileDialog(shell);
-				fdialog.setText("Load Workflow");
-				fdialog.setFilterPath("sources/");
-		        String[] filterExt = { "*.csv" };
-		        fdialog.setFilterExtensions(filterExt);
-				pathFile = fdialog.open();
-				if (pathFile != null) {
-					readData = new ReadData();
-					readData.ReadDataCsv(pathFile);
-				}
-
-			}
-		});
-		
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-
-		
 		Composite compositePonderacion = new Composite(shell, SWT.BORDER);
 		gridLayout = new GridLayout();
 		gridLayout.numColumns = 2;
@@ -161,7 +120,7 @@ public class Principal {
 		
 		GridData gd_compositePonderacion = new GridData(SWT.LEFT, SWT.FILL, false,
 				true, 1, 1);
-		gd_compositePonderacion.horizontalSpan = 2;
+		gd_compositePonderacion.horizontalSpan = 3;
 		gd_compositePonderacion.widthHint = 200;
 		gd_compositePonderacion.heightHint = 236;
 		
@@ -224,26 +183,25 @@ public class Principal {
 		tableResults.setHeaderVisible(true);
 		tableResults.setLinesVisible(true);
 		
-				
-				TableColumn colTipo = new TableColumn(tableResults, SWT.LEFT);
-				colTipo.setWidth(120);
-				colTipo.setText("Abstract Service");
-				
-						TableColumn colDNI = new TableColumn(tableResults, SWT.LEFT);
-						colDNI.setWidth(126);
-						colDNI.setText("Concrete Service");
-						
-								TableColumn colApellido = new TableColumn(tableResults, SWT.LEFT);
-								colApellido.setWidth(800);
-								colApellido.setText("URL");
 		
-		Button button = new Button(shell, SWT.NONE);
-		button.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent arg0) {
-			}
-		});
-		button.setText("?");
+		TableColumn colTipo = new TableColumn(tableResults, SWT.LEFT);
+		colTipo.setWidth(120);
+		colTipo.setText("Abstract Service");
+		
+		TableColumn colDNI = new TableColumn(tableResults, SWT.LEFT);
+		colDNI.setWidth(126);
+		colDNI.setText("Concrete Service");
+		
+		TableColumn colApellido = new TableColumn(tableResults, SWT.LEFT);
+		colApellido.setWidth(800);
+		colApellido.setText("URL");
+		
+		lblInfoGen = new Label(shell, SWT.NONE);
+		lblInfoGen.setText("Cantidad de generaciones: -");
+		GridData gd_labelFit = new GridData(SWT.LEFT, SWT.CENTER, false, false, 1, 1);
+		gd_labelFit.widthHint = 176;
+		lblInfoGen.setLayoutData(gd_labelFit);
+		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -279,8 +237,21 @@ public class Principal {
 		        });
 				btnGenerate.setText("Generate");
 		
+				
+				Label lblFitness = new Label(shell, SWT.NONE);
+				lblFitness.setText("Fitness number: -");
+				new Label(shell, SWT.NONE);
+				new Label(shell, SWT.NONE);
+				new Label(shell, SWT.NONE);
+				new Label(shell, SWT.NONE);
+				new Label(shell, SWT.NONE);
+				new Label(shell, SWT.NONE);
+				new Label(shell, SWT.NONE);
+				new Label(shell, SWT.NONE);
 	
 	}
+	
+	
 	
 	public void restartValues()
 	{
@@ -319,14 +290,41 @@ public class Principal {
              	.evolveUntil(Conditions.converge(0.001, Chromosome.class).or(Conditions.after(150)))
             	.best();
         for (int i = 0; i < c.length(); i++) {
-       	 System.out.println(c.getGen(i).getService_name());
-       	 TableItem item = new TableItem(tableResults, SWT.NONE);
-			 item.setText(new String[] {
-						c.getGen(i).getInterfaz(),
-						c.getGen(i).getService_name(),
-						c.getGen(i).getWsdl_address() });
-			}
+	       	 System.out.println(c.getGen(i).getService_name());
+	       	 TableItem item = new TableItem(tableResults, SWT.NONE);
+				 item.setText(new String[] {
+							c.getGen(i).getInterfaz(),
+							c.getGen(i).getService_name(),
+							c.getGen(i).getWsdl_address() });
+		}
+        lblInfoGen.setText("Cantidad de Generaciones: " + c.getAptitude());
+
 	}
+	
+	  class salirSelectionListener implements SelectionListener {
+		    public void widgetSelected(SelectionEvent event) {
+		    	shell.close();
+		    }
+
+		    public void widgetDefaultSelected(SelectionEvent event) {}
+	  }
+	  
+	  class cargarWorkflowSelectionListener implements SelectionListener {
+		    public void widgetSelected(SelectionEvent event) {
+				FileDialog fdialog = new FileDialog(shell);
+				fdialog.setText("Load Workflow");
+				fdialog.setFilterPath("sources/");
+		        String[] filterExt = { "*.csv" };
+		        fdialog.setFilterExtensions(filterExt);
+				pathFile = fdialog.open();
+				if (pathFile != null) {
+					readData = new ReadData();
+					readData.ReadDataCsv(pathFile);
+				}
+			}		    
+
+		    public void widgetDefaultSelected(SelectionEvent event) {}
+	  }
 
 	
 	
@@ -336,6 +334,8 @@ public class Principal {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		//LoadLibrary libraryLoader = new LoadLibrary();
+		//libraryLoader.loadSWT();
 		Display display = new Display();
         new Principal(display);
         display.dispose();
