@@ -368,19 +368,21 @@ public class Principal {
 	  
 	  class guardarWorkflowSelectionListener implements SelectionListener {
 		    public void widgetSelected(SelectionEvent event) {
-				FileDialog fdialog = new FileDialog(shell, SWT.SAVE);
-				fdialog.setText("Save as...");
-				fdialog.setFilterNames(new String[] { "Batch Files", "All Files (*.*)" });
-				fdialog.setFilterExtensions(new String[] { "*.bat", "*.*" });
-				fdialog.setFilterPath("sources/"); // Windows path
-				fdialog.setFileName("*.txt");
-				System.out.println("Save to: " + fdialog.open());	        
-				String name = fdialog.getFileName();
-				if (pathFile != null) {
-					readData = new ReadData();
-					readData.writeFichero(name, c, evol.currentGeneration());
+				if ((pathFile != null) && (c != null)){
+					FileDialog fdialog = new FileDialog(shell, SWT.SAVE);
+					fdialog.setText("Save as...");
+					fdialog.setFilterNames(new String[] { "Batch Files", "All Files (*.*)" });
+					fdialog.setFilterExtensions(new String[] { "*.bat", "*.*" });
+					fdialog.setFilterPath("sources/"); // Windows path
+					fdialog.setFileName("*.txt");
+					System.out.println("Save to: " + fdialog.open());	        
+					String name = fdialog.getFileName();
+					if(name != null){
+						readData.writeFichero(name, c, evol.currentGeneration());
+					}
 				}
-			}		    
+				
+		}		    
 
 		    public void widgetDefaultSelected(SelectionEvent event) {}
 	  }
