@@ -98,34 +98,34 @@ public class Principal {
 		shell.setMenuBar(menuBar);
 		
 		MenuItem mntmArchivo = new MenuItem(menuBar, SWT.CASCADE);
-		mntmArchivo.setText("Archivo");
+		mntmArchivo.setText("File");
 	   
 		Menu menu = new Menu(mntmArchivo);
 		mntmArchivo.setMenu(menu);
 		
 		MenuItem mntmCargar = new MenuItem(menu, SWT.NONE);
-		mntmCargar.setText("Cargar Workflow");
+		mntmCargar.setText("Load Workflow");
 		mntmCargar.addSelectionListener(new cargarWorkflowSelectionListener());
 		
 		MenuItem mntmGuardar = new MenuItem(menu, SWT.NONE);
-		mntmGuardar.setText("Guardar");
+		mntmGuardar.setText("Save");
 		mntmGuardar.addSelectionListener(new guardarWorkflowSelectionListener());
 		
 		
 		new MenuItem(menu, SWT.SEPARATOR);
 		
 		MenuItem mntmSalir = new MenuItem(menu, SWT.NONE);
-		mntmSalir.setText("Salir");
+		mntmSalir.setText("Exit");
 		mntmSalir.addSelectionListener(new salirSelectionListener());
 		
 		MenuItem mntmNewSubmenu = new MenuItem(menuBar, SWT.CASCADE);
-		mntmNewSubmenu.setText("Ayuda");
+		mntmNewSubmenu.setText("Help");
 		
 		Menu menu_1 = new Menu(mntmNewSubmenu);
 		mntmNewSubmenu.setMenu(menu_1);
 		
 		MenuItem mntmAcerca = new MenuItem(menu_1, SWT.PUSH);
-		mntmAcerca.setText("Acerca de ...");
+		mntmAcerca.setText("About ...");
 		
 		mntmAcerca.addSelectionListener(new SelectionListener() {
 	        public void widgetSelected(SelectionEvent e) {
@@ -230,7 +230,7 @@ public class Principal {
 		colApellido.setText("URL");
 		
 		lblInfoGen = new Label(shell, SWT.NONE);
-		lblInfoGen.setText("Cantidad de generaciones: -");
+		lblInfoGen.setText("Amount of generations: -");
 		GridData gd_labelFit = new GridData(SWT.LEFT, SWT.CENTER, false, false, 1, 1);
 		gd_labelFit.widthHint = 200;
 		lblInfoGen.setLayoutData(gd_labelFit);
@@ -333,7 +333,7 @@ public class Principal {
 							c.getGen(i).getService_name(),
 							c.getGen(i).getWsdl_address() });
 		}
-        lblInfoGen.setText("Cantidad de Generaciones: " + evol.currentGeneration() );
+        lblInfoGen.setText("Amount of generations: " + evol.currentGeneration() );
         lblFitness.setText("Fitness number: " + c.getAptitude());
 
 	}
@@ -369,7 +369,7 @@ public class Principal {
 	  class guardarWorkflowSelectionListener implements SelectionListener {
 		    public void widgetSelected(SelectionEvent event) {
 				FileDialog fdialog = new FileDialog(shell, SWT.SAVE);
-				fdialog.setText("Guardar como...");
+				fdialog.setText("Save as...");
 				fdialog.setFilterNames(new String[] { "Batch Files", "All Files (*.*)" });
 				fdialog.setFilterExtensions(new String[] { "*.bat", "*.*" });
 				fdialog.setFilterPath("sources/"); // Windows path

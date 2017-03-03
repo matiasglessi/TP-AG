@@ -56,7 +56,7 @@ public class AcercaDe {
 		txtLosAlgoritmosGenticos.setEditable(false);
 		txtLosAlgoritmosGenticos.setLayoutData(new GridData(GridData.FILL_BOTH));
 		txtLosAlgoritmosGenticos.setFont(SWTResourceManager.getFont(".SF NS Text", 11, SWT.NORMAL));
-		txtLosAlgoritmosGenticos.setText("	Los algoritmos genéticos, o algoritmos evolutivos, son una técnica de búsqueda estocástica guiada, inspirada por los mecanismos de la selección natural, la genética y la evolución.");
+		txtLosAlgoritmosGenticos.setText("	Genetic Algorithms, also known as Evolutive Algorithms, are a guided stochastic search technique, inspired by the mechanisms of natural selection, genetics and evolution.");
 		txtLosAlgoritmosGenticos.setBounds(10, 110, 580, 64);
 		Device device = Display.getCurrent();
 		txtLosAlgoritmosGenticos.setBackground(new Color(device, 233, 233, 233));
@@ -64,7 +64,7 @@ public class AcercaDe {
 		Label lblAutores = new Label(acercaDe, SWT.NONE);
 		lblAutores.setFont(SWTResourceManager.getFont(".SF NS Text", 11, SWT.BOLD | SWT.ITALIC));
 		lblAutores.setBounds(10, 195, 65, 14);
-		lblAutores.setText("Autores:");
+		lblAutores.setText("Authors:");
 		
 		Label lblDelRioValeria = new Label(acercaDe, SWT.NONE);
 		lblDelRioValeria.setBounds(10, 223, 110, 14);
