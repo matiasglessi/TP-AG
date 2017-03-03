@@ -20,7 +20,7 @@ public class AcercaDe {
 
 	public AcercaDe(Shell parent, Display d){
 		acercaDe = new Shell(parent);
-		acercaDe.setSize(468, 300);
+		acercaDe.setSize(600, 300);
 		Rectangle splashRect = acercaDe.getBounds();
         Rectangle displayRect = d.getBounds();
         int x = (displayRect.width - splashRect.width) / 2;
@@ -28,7 +28,7 @@ public class AcercaDe {
         acercaDe.setLocation(x, y);
 		
 		Button btnOk = new Button(acercaDe, SWT.NONE);
-		btnOk.setBounds(364, 240, 94, 28);
+		btnOk.setBounds(464, 240, 94, 28);
 		btnOk.setText("OK");
 		btnOk.addSelectionListener(new SelectionAdapter() {
 		    @Override
@@ -57,13 +57,13 @@ public class AcercaDe {
 		txtLosAlgoritmosGenticos.setLayoutData(new GridData(GridData.FILL_BOTH));
 		txtLosAlgoritmosGenticos.setFont(SWTResourceManager.getFont(".SF NS Text", 11, SWT.NORMAL));
 		txtLosAlgoritmosGenticos.setText("	Los algoritmos genéticos, o algoritmos evolutivos, son una técnica de búsqueda estocástica guiada, inspirada por los mecanismos de la selección natural, la genética y la evolución.");
-		txtLosAlgoritmosGenticos.setBounds(10, 110, 448, 64);
+		txtLosAlgoritmosGenticos.setBounds(10, 110, 580, 64);
 		Device device = Display.getCurrent();
 		txtLosAlgoritmosGenticos.setBackground(new Color(device, 233, 233, 233));
 		
 		Label lblAutores = new Label(acercaDe, SWT.NONE);
 		lblAutores.setFont(SWTResourceManager.getFont(".SF NS Text", 11, SWT.BOLD | SWT.ITALIC));
-		lblAutores.setBounds(10, 195, 59, 14);
+		lblAutores.setBounds(10, 195, 65, 14);
 		lblAutores.setText("Autores:");
 		
 		Label lblDelRioValeria = new Label(acercaDe, SWT.NONE);
@@ -73,16 +73,16 @@ public class AcercaDe {
 		Label lblValeriadlriogmailcom = new Label(acercaDe, SWT.NONE);
 		lblValeriadlriogmailcom.setFont(SWTResourceManager.getFont(".SF NS Text", 11, SWT.ITALIC));
 		lblValeriadlriogmailcom.setText("valeriadlrio@gmail.com");
-		lblValeriadlriogmailcom.setBounds(168, 223, 158, 17);
+		lblValeriadlriogmailcom.setBounds(168, 223, 180, 17);
 		
 		Label lblGlessiMatiasAlejandro = new Label(acercaDe, SWT.NONE);
 		lblGlessiMatiasAlejandro.setText("Glessi, Matias Alejandro");
-		lblGlessiMatiasAlejandro.setBounds(10, 243, 130, 14);
+		lblGlessiMatiasAlejandro.setBounds(10, 243, 140, 14);
 		
 		Label lblMatiasglessigmailcom = new Label(acercaDe, SWT.NONE);
 		lblMatiasglessigmailcom.setText("matiasglessi@gmail.com");
 		lblMatiasglessigmailcom.setFont(SWTResourceManager.getFont(".SF NS Text", 11, SWT.ITALIC));
-		lblMatiasglessigmailcom.setBounds(168, 240, 158, 23);
+		lblMatiasglessigmailcom.setBounds(168, 240, 190, 23);
 		acercaDe.open();
 	}
 	

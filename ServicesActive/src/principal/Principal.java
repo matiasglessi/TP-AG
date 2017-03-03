@@ -16,7 +16,6 @@ import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
-import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Spinner;
 import org.eclipse.swt.widgets.Table;
@@ -56,7 +55,8 @@ public class Principal {
 	private HashMap<String, Integer> ponderaciones;
 	private static final Integer MAX_PONDERACION =10;
 	private static final Integer MIN_PONDERACION =-10;
-	Chromosome c;
+	private Chromosome c;
+	private Evolution<Chromosome, Double> evol;
 	
 
 
@@ -320,11 +320,11 @@ public class Principal {
 		tableResults.removeAll();
 		System.out.println("Cromosoma generado: ");
         ChromosomeFactory chromosomeFactory = new ChromosomeFactory(ponderaciones, ReadData.getWsdlInterface());
-		/*Chromosome*/ c = Evolution.create(chromosomeFactory, 250, 0.01)
+        evol = Evolution.create(chromosomeFactory, 250, 0.01)
              	.mutator(Operators.factory(chromosomeFactory).basicMutatorBuilder(0.05).build())
         		.selector(Selectors.binaryTournament(0.9, 0.5))
-             	.evolveUntil(Conditions.converge(0.001, Chromosome.class).or(Conditions.after(150)))
-            	.best();
+             	.evolveUntil(Conditions.converge(0.001));
+		c = evol.best();
         for (int i = 0; i < c.length(); i++) {
 	       	 System.out.println(c.getGen(i).getService_name());
 	       	 TableItem item = new TableItem(tableResults, SWT.NONE);
@@ -333,7 +333,7 @@ public class Principal {
 							c.getGen(i).getService_name(),
 							c.getGen(i).getWsdl_address() });
 		}
-        lblInfoGen.setText("Cantidad de Generaciones: " + c.getAptitude());
+        lblInfoGen.setText("Cantidad de Generaciones: " + evol.currentGeneration() );
         lblFitness.setText("Fitness number: " + c.getAptitude());
 
 	}
@@ -378,7 +378,7 @@ public class Principal {
 				String name = fdialog.getFileName();
 				if (pathFile != null) {
 					readData = new ReadData();
-					readData.writeFichero(name, c);
+					readData.writeFichero(name, c, evol.currentGeneration());
 				}
 			}		    
 
@@ -395,6 +395,7 @@ public class Principal {
 	public static void main(String[] args) {
 		//LoadLibrary libraryLoader = new LoadLibrary();
 		//libraryLoader.loadSWT();
+       
 		display = new Display();
         new Principal(display);
         display.dispose();

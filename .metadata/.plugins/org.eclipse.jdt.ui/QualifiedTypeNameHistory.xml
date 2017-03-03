@@ -33,4 +33,5 @@
 <fullyQualifiedTypeName name="principal.Principal.guardarWorkflowSelectionListener"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
 <fullyQualifiedTypeName name="dominio.Chromosome"/>
+<fullyQualifiedTypeName name="javax.swing.UIManager"/>
 </qualifiedTypeNameHistroy>

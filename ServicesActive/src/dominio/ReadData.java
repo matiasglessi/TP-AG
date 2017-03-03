@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.csvreader.CsvReader;
+import com.mgiamberardino.jnetic.population.Evolution;
 
 
 public class ReadData {
@@ -97,7 +98,7 @@ public class ReadData {
 	}
 	
 
-	public  void writeFichero (String object, Chromosome c){
+	public  void writeFichero (String object, Chromosome c, int evol){
 		try {
 			BufferedWriter bf = new BufferedWriter(new FileWriter(object));
 			bf.write("Workflow óptimo: " + "\n");
@@ -106,6 +107,7 @@ public class ReadData {
 				
 			}
 			bf.write("Aptitud del Cromosoma: " + c.getAptitude() + "\n");
+			bf.write("Generaciones: " + evol + "\n");
 			bf.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

@@ -1,8 +1,0 @@
-Workflow óptimo: 
-Interfaz: iniciaSesion - Name Service: SecureLogin
-Interfaz: registraUsuario - Name Service: SecureLogin
-Interfaz: validaDireccion - Name Service: DOTSAddressValidate
-Interfaz: reservaVuelo - Name Service: FlightScheduleAggregatorService
-Interfaz: reservaHotel - Name Service: K4THotelAvailWS
-Interfaz: autorizaPago - Name Service: sbp
-Aptitud del Cromosoma: 499.6666666666667
