@@ -1,0 +1,9 @@
+Workflow óptimo: 
+Interfaz: iniciaSesion - Name Service: StateDemo
+Interfaz: registraUsuario - Name Service: SIMPS
+Interfaz: validaDireccion - Name Service: validateAddress_Service
+Interfaz: reservaVuelo - Name Service: FlightRouteService
+Interfaz: reservaHotel - Name Service: K4THotelAvailWS
+Interfaz: autorizaPago - Name Service: sbp
+Aptitud del Cromosoma: 1508.357142857143
+Generaciones: 17
