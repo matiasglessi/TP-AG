@@ -16,6 +16,7 @@ import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
+import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Spinner;
 import org.eclipse.swt.widgets.Table;
@@ -317,25 +318,32 @@ public class Principal {
 	
 	
 	public void generateSolution(){
-		tableResults.removeAll();
-		System.out.println("Cromosoma generado: ");
-        ChromosomeFactory chromosomeFactory = new ChromosomeFactory(ponderaciones, ReadData.getWsdlInterface());
-        evol = Evolution.create(chromosomeFactory, 250, 0.01)
-             	.mutator(Operators.factory(chromosomeFactory).basicMutatorBuilder(0.05).build())
-        		.selector(Selectors.binaryTournament(0.9, 0.5))
-             	.evolveUntil(Conditions.converge(0.001));
-		c = evol.best();
-        for (int i = 0; i < c.length(); i++) {
-	       	 System.out.println(c.getGen(i).getService_name());
-	       	 TableItem item = new TableItem(tableResults, SWT.NONE);
-				 item.setText(new String[] {
-							c.getGen(i).getInterfaz(),
-							c.getGen(i).getService_name(),
-							c.getGen(i).getWsdl_address() });
+		
+		if(areAllZeroValues()){
+		    MessageBox messageBox = new MessageBox(shell, SWT.ICON_ERROR);
+		    messageBox.setMessage("At least one attribute must be ponderated.");
+		    messageBox.open();
 		}
-        lblInfoGen.setText("Amount of generations: " + evol.currentGeneration() );
-        lblFitness.setText("Fitness number: " + c.getAptitude());
-
+		else{
+			tableResults.removeAll();
+			System.out.println("Cromosoma generado: ");
+	        ChromosomeFactory chromosomeFactory = new ChromosomeFactory(ponderaciones, ReadData.getWsdlInterface());
+	        evol = Evolution.create(chromosomeFactory, 250, 0.01)
+	             	.mutator(Operators.factory(chromosomeFactory).basicMutatorBuilder(0.05).build())
+	        		.selector(Selectors.binaryTournament(0.9, 0.5))
+	             	.evolveUntil(Conditions.converge(0.001));
+			c = evol.best();
+	        for (int i = 0; i < c.length(); i++) {
+		       	 System.out.println(c.getGen(i).getService_name());
+		       	 TableItem item = new TableItem(tableResults, SWT.NONE);
+					 item.setText(new String[] {
+								c.getGen(i).getInterfaz(),
+								c.getGen(i).getService_name(),
+								c.getGen(i).getWsdl_address() });
+			}
+	        lblInfoGen.setText("Amount of generations: " + evol.currentGeneration() );
+	        lblFitness.setText("Fitness number: " + c.getAptitude());
+		}
 	}
 	
 	  class salirSelectionListener implements SelectionListener {
@@ -388,7 +396,30 @@ public class Principal {
 	  }
 
 
-	
+	  
+	  private boolean areAllZeroValues()
+	  {
+		  	if(spinnerResponseTime.getSelection() == 0){
+		  		if (spinnerAvailability.getSelection() == 0) {
+		  			if (spinnerThroughoput.getSelection() == 0) {
+		  				if(spinnerSuccess.getSelection() == 0) {
+		  					if (spinnerReliability.getSelection() == 0){
+		  						if(spinnerCompliance.getSelection() == 0){
+		  							if(spinnerBest.getSelection() == 0){
+		  								if(spinnerLatency.getSelection()==0){
+		  									return true;
+		  								}
+		  							}
+		  						}
+		  					}
+		  				}
+		  			}
+		  		}
+		  	}
+		  return false;
+	  }
+	  
+	  
 	/**
 	 * Launch the application.
 	 * 
