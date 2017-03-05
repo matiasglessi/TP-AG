@@ -18,7 +18,6 @@
 <fullyQualifiedTypeName name="com.eviware.soapui.security.tools.InfiniteInputStream"/>
 <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
 <fullyQualifiedTypeName name="dominio.ChromosomeFactory"/>
-<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.operators.Operators"/>
 <fullyQualifiedTypeName name="com.mgiamberardino.jnetic.util.Selectors"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Display"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Menu"/>
@@ -35,4 +34,5 @@
 <fullyQualifiedTypeName name="dominio.Chromosome"/>
 <fullyQualifiedTypeName name="javax.swing.UIManager"/>
 <fullyQualifiedTypeName name="com.mgiamberardino.jnetic.operators.Crossers.OnePointCrossoverBuilder"/>
+<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.operators.Operators"/>
 </qualifiedTypeNameHistroy>

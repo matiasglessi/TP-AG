@@ -24,7 +24,6 @@ import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 
 import com.mgiamberardino.jnetic.operators.Operators;
-import com.mgiamberardino.jnetic.operators.Selectors;
 import com.mgiamberardino.jnetic.population.Evolution;
 import com.mgiamberardino.jnetic.util.Conditions;
 
@@ -328,10 +327,10 @@ public class Principal {
 			tableResults.removeAll();
 			System.out.println("Cromosoma generado: ");
 	        ChromosomeFactory chromosomeFactory = new ChromosomeFactory(ponderaciones, ReadData.getWsdlInterface());
-	        evol = Evolution.create(chromosomeFactory, 250, 0.01)
-	             	.mutator(Operators.factory(chromosomeFactory).basicMutatorBuilder(0.05))
-	        		.selector(Selectors.binaryTournament(0.9, 0.5))
-	        		.crosser(Operators.factory(chromosomeFactory).onePointCrosserBuilder(4))
+	        evol = Evolution.create(chromosomeFactory, 250, 0.1)
+	             	.mutator(Operators.factory(chromosomeFactory).mutators().basicMutatorBuilder(0.05))
+	        		.selector(Operators.SELECTORS.binaryTournament(0.3, 0.5))
+	        		.crosser(Operators.factory(chromosomeFactory).crossers().uniformCrosserBuilder(0.5))
 	             	.evolveUntil(Conditions.converge(0.001));
 			c = evol.best();
 	        for (int i = 0; i < c.length(); i++) {

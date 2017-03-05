@@ -60,7 +60,7 @@ public class Chromosome implements Individual<Wsdl>{
 	
 
 	private  Integer sumaPonderacion(Map<String, Integer> ponderacion) {
-		return ponderacion.values().stream().reduce(0, Integer::sum);
+		return ponderacion.values().stream().map(Math::abs).reduce(0, Integer::sum);
 	}
 	
 	@Override

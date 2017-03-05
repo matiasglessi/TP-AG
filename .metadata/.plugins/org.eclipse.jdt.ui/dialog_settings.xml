@@ -35,7 +35,7 @@
 		</list>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="3" key="pageIndex"/>
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
@@ -46,6 +46,23 @@
 		<item value="434" key="DIALOG_X_ORIGIN"/>
 		<item value="743" key="DIALOG_HEIGHT"/>
 		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="FatJarPackageWizard">
+		<item value="/home/valeria/Documentos/diseño/ProyectoEjecutableLinux/Ag.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="Principal - ServicesActive" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="/home/valeria/Documentos/diseño/TP-AlgoritmosGeneticos" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
+		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
+		<item value="3" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="/home/valeria/Documentos/diseño/ProyectoEjecutableLinux/Ag.jar"/>
+			<item value="/home/valeria/Documentos/diseño/ProyectoEjecutableMac/Ag.jar"/>
+			<item value="/home/valeria/Documentos/diseño/Proyecto Ejecutable/Ag.jar"/>
+			<item value="/home/valeria/Documentos/Ag.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="/home/valeria/Documentos/diseño/TP-AlgoritmosGeneticos.xml"/>
+			<item value=".xml"/>
+		</list>
 	</section>
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
 		<item value="380" key="DIALOG_WIDTH"/>
