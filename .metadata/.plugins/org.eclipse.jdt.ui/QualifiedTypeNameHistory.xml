@@ -34,4 +34,5 @@
 <fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
 <fullyQualifiedTypeName name="dominio.Chromosome"/>
 <fullyQualifiedTypeName name="javax.swing.UIManager"/>
+<fullyQualifiedTypeName name="com.mgiamberardino.jnetic.operators.Crossers.OnePointCrossoverBuilder"/>
 </qualifiedTypeNameHistroy>

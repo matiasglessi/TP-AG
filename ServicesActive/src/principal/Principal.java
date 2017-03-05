@@ -24,9 +24,9 @@ import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 
 import com.mgiamberardino.jnetic.operators.Operators;
+import com.mgiamberardino.jnetic.operators.Selectors;
 import com.mgiamberardino.jnetic.population.Evolution;
 import com.mgiamberardino.jnetic.util.Conditions;
-import com.mgiamberardino.jnetic.util.Selectors;
 
 import dominio.Chromosome;
 import dominio.ChromosomeFactory;
@@ -329,8 +329,9 @@ public class Principal {
 			System.out.println("Cromosoma generado: ");
 	        ChromosomeFactory chromosomeFactory = new ChromosomeFactory(ponderaciones, ReadData.getWsdlInterface());
 	        evol = Evolution.create(chromosomeFactory, 250, 0.01)
-	             	.mutator(Operators.factory(chromosomeFactory).basicMutatorBuilder(0.05).build())
+	             	.mutator(Operators.factory(chromosomeFactory).basicMutatorBuilder(0.05))
 	        		.selector(Selectors.binaryTournament(0.9, 0.5))
+	        		.crosser(Operators.factory(chromosomeFactory).onePointCrosserBuilder(4))
 	             	.evolveUntil(Conditions.converge(0.001));
 			c = evol.best();
 	        for (int i = 0; i < c.length(); i++) {
@@ -341,7 +342,7 @@ public class Principal {
 								c.getGen(i).getService_name(),
 								c.getGen(i).getWsdl_address() });
 			}
-	        lblInfoGen.setText("Amount of generations: " + evol.currentGeneration() );
+	        lblInfoGen.setText("Amount of generations: " + evol.currentGeneration());
 	        lblFitness.setText("Fitness number: " + c.getAptitude());
 		}
 	}

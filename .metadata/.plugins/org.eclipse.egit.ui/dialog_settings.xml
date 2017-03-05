@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="630" key="DIALOG_WIDTH"/>
+	<item value="0" key="DIALOG_Y_ORIGIN"/>
+	<item value="2" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="584" key="DIALOG_HEIGHT"/>
+	<item value="371" key="DIALOG_X_ORIGIN"/>
+	<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	<section name="GitImportWizard">
+	</section>
+</section>
